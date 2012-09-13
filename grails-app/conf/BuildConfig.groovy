@@ -24,6 +24,8 @@ grails.project.dependency.resolution = {
 
         mavenLocal()
         mavenCentral()
+        
+        mavenRepo "http://localhost:8081/nexus/content/repositories/localplugins"
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
         //mavenRepo "http://snapshots.repository.codehaus.org"
@@ -40,7 +42,9 @@ grails.project.dependency.resolution = {
     plugins {
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.0"
-        runtime ":resources:1.1.6"
+        runtime ":resources:1.2.RC2"
+        
+        build "org.grails.plugins:eappcore:latest.integration"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
         //runtime ":zipped-resources:1.0"

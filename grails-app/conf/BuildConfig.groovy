@@ -43,6 +43,8 @@ grails.project.dependency.resolution = {
         runtime ":hibernate:$grailsVersion"
         runtime ":jquery:1.8.0"
         runtime ":resources:1.2.RC2"
+        test ":auto-test:1.0.1"
+        compile ":build-test-data:2.0.3"
         
         build "org.grails.plugins:eappcore:latest.integration"
 

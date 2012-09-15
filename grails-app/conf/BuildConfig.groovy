@@ -5,6 +5,7 @@ grails.project.test.reports.dir = "target/test-reports"
 grails.project.target.level = 1.6
 grails.project.source.level = 1.6
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
+grails.server.port.http = 8083
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -45,6 +46,7 @@ grails.project.dependency.resolution = {
         runtime ":resources:1.2.RC2"
         test ":auto-test:1.0.1"
         compile ":build-test-data:2.0.3"
+        compile ":codenarc:0.17"
         
         build "org.grails.plugins:eappcore:latest.integration"
 

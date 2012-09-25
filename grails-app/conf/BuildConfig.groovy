@@ -47,6 +47,9 @@ grails.project.dependency.resolution = {
         test ":auto-test:1.0.1"
         compile ":build-test-data:2.0.3"
         compile ":codenarc:0.17"
+        compile ":audit-logging:0.5.4"
+        compile ":functional-test:2.0.M2"
+        test ":code-coverage:1.2.5"
         
         build "org.grails.plugins:eappcore:latest.integration"
 
